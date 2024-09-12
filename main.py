@@ -16,8 +16,6 @@ print(Employee.no_of_employees)
 rohan = Employee("rohan", "das", 44000)
 print(Employee.no_of_employees)
 
-
-
 #print(nitin.__dict__)
 #itin.increment = 9
 #print(nitin.__dict__)
