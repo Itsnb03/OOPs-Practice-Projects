@@ -1,0 +1,6 @@
+class Student:
+    def __init__(self,name) -> None:
+        self.name=name
+
+obj_student=Student()
+student1=(obj_student.name)
