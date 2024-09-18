@@ -19,13 +19,22 @@ class Employee:
      def from_str(cls,emp_string):
           fname,lname,salary = emp_string.split("-")
           return cls(fname,lname,salary)
+     
+     @staticmethod
+     def isopen(day):
+          if day =="sunday":
+               return False
+          else:
+               return True
 
-nitin = Employee("Nitin","Bharadwaj",66000)
-rohit = Employee.from_str("rohit-dubey-33000")
-rohan = Employee("rohan","das",66000)
+shubham = Employee("Shubham","Yadav",88000)
+print(shubham.isopen("sunday"))
+#nitin = Employee("Nitin","Bharadwaj",66000)
+#rohit = Employee.from_str("rohit-dubey-33000")
+#rohan = Employee("rohan","das",66000)
 
 
-print(rohit.salary)
+#print(rohit.salary)
 Employee
 
 
