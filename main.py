@@ -26,9 +26,26 @@ class Employee:
                return False
           else:
                return True
+          
 
-shubham = Employee("Shubham","Yadav",88000)
-print(shubham.isopen("sunday"))
+class Programmer(Employee):
+     def __init__(self, fname, lname, salary,proglang,exp):
+          super().__init__(fname, lname, salary)
+          self.proglang = proglang
+          self.exp = exp
+
+     def increase(self):
+           salary = int(salary * (Employee.increment+ 0.2))
+          
+
+nitin = Programmer("nitin","Bharadwaj",77000,"Python","2 years")
+
+print(nitin.exp)
+
+     
+
+#shubham = Employee("Shubham","Yadav",88000)
+#print(shubham.isopen("sunday"))
 #nitin = Employee("Nitin","Bharadwaj",66000)
 #rohit = Employee.from_str("rohit-dubey-33000")
 #rohan = Employee("rohan","das",66000)
