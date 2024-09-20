@@ -1,6 +1,8 @@
 class Student:
-    def __init__(self,name) -> None:
-        self.name=name
+    def __init__(self,name,rollno,div):
+        self.name = name
+        self.rollno = rollno
+        self.div = div
 
-obj_student=Student()
-student1=(obj_student.name)
+nitin = Student("nitin",4,"A")
+print(nitin.div)
